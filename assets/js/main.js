@@ -69,7 +69,7 @@ sr.reveal(".about__social-icon", { delay: 600, interval: 200 });
 const downloadPdf = document.querySelector("#download-pdf");
 downloadPdf.addEventListener("click", () => {
   window.open(
-    "https://mega.nz/file/RKxGCTKI#6PniSjmMz5AlVZCChN1hgQzyLYcITepEUEG1KCUgVOc",
+    "https://mega.nz/file/ITQGjIQS#fqfM1_X3eniD3sW1ch5hQ5P_ouCopF8GZ-T_PzE7uyc",
     "_blank"
   );
 });
@@ -90,10 +90,29 @@ sr.reveal(".contact__button", { delay: 600 });
 
 const fields = document.querySelectorAll(".contact__form");
 
-// console.log(fields);
+// // console.log(fields);
 
-for (field of fields) {
-  field.addEventListener("invalid", (event) => {
-    console.log("Campo invalido");
-  });
-}
+// for (field of inval) {
+//   field.addEventListener("invalid", (event) => {
+//     console.log("Campo invalido");
+//   });
+// }
+
+
+
+const btnEnviar = document.querySelector("#btnEnviar")
+btnEnviar.addEventListener("click", function () {
+  if (btnEnviar == btnEnviar) {
+    window.Swal.fire({
+      title: 'Me Desculpa?',
+      text: 'Sistema de formulario ainda esta em Desenvolvimento!',
+      confirmButtonColor: "#DD6B55",
+      icon: 'question'
+    })
+  } else {
+    console.log('UE')
+
+  }
+})
+
+

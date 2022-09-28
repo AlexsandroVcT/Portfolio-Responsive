@@ -1,229 +1,298 @@
 <!DOCTYPE html>
-    <html lang="pt-BR">
+<html lang="pt-BR">
 
-    <head>
-        <meta charset="UTF-8">
-        
-         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <!-- ===== BOX ICONS ===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-        <title>Portfolio responsive complete</title>
-        <!--===== MAIN JS =====-->
-        <script defer src="assets/js/main.js"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
 
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- ===== BOX ICONS ===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>Portfolio responsive complete</title>
+
+    <!-- SWEETALERT PERSONALIZADO -->
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="sweetalert2.min.js"></script>
+    <!--===== MAIN JS =====-->
+    <script defer src="assets/js/main.js"></script>
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo"></a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">Sobre</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Habilidades</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Projeto</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+
+        <!--===== HOME =====-->
+        <section class="home" id="home">
+            <div class="home__container bd-grid">
+                <img class="imgHome" src="assets/img/data-extraction-animate.svg" class="home__title">
+
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt'></i>Scroll down</a>
+                </div>
+                <img src="assets/img/businessman-animate.svg" alt="" class="home__img">
+
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section" id="about">
+            <h2 class="section-title">Sobre</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img class="imgAlex" src="assets/img/Alexsandro.jpeg" alt="">
+                </div>
+
                 <div>
-                    <a href="#" class="nav__logo"></a>
-                </div>
+                    <h2 class="about__subtitle">Alexsandro Vicente</h2>
+                    <span class="about__profession">Front-End</span>
+                    <p class="about__text">Ola meu nome é Alexsandro, sou estudante de programação focado na área de
+                        front-end. Atualmente estou fazendo o curso de desenvolvedor full stack na Fullture. Possuo
+                        conhecimento intermediário em HTML, CSS, JAVASCRIPT e REACT, liderança de equipe e técnicas de
+                        Scrum. Possuo projetos próprios em duas lojas de ecommerce. sou jovem dinâmico, apaixonado por
+                        tecnologia, rápido aprendizado, bom trabalho em equipe, liderança, prestativo. Estou pronto pra
+                        entrar no mercado de trabalho.</p>
+                    <input href="#" style="--clr:#FF0000" type="submit" id="download-pdf" value="CURRICULO"
+                        class="contact__button">
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">Sobre</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Habilidades</a></li>
-                        <li class="nav__item"><a href="#portfolio" class="nav__link">Projeto</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contato</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-
-            <!--===== HOME =====-->
-            <section class="home" id="home">
-                <div class="home__container bd-grid">
-                    <img class="imgHome" src="assets/img/data-extraction-animate.svg" class="home__title">
-                    
-                    <div class="home__scroll">
-                        <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
+                    <div class="about__social">
+                        <a href="https://www.linkedin.com/in/alexsandro-vicente-b74b60234/" target="_blank"
+                            class="about__social-icon linkedin"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/AlexsandroVcT" target="_blank" class="about__social-icon github"><i
+                                class='bx bxl-github'></i></a>
+                        <a href="https://gitlab.com/AlexsandroVcT" target="_blank" class="about__social-icon gitlab"><i
+                                class='bx bxl-gitlab'></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=5512996779753&text=%20Oi Alexsandro%20%20Tudo bem? "
+                            target="_blank" class="about__social-icon whatsapp"><i class='bx bxl-whatsapp'></i></a>
                     </div>
-                    <img src="assets/img/businessman-animate.svg" alt="" class="home__img">
-                    
                 </div>
-            </section>
-            
-            <!--===== ABOUT =====-->
-            <section class="about section" id="about">
-                <h2 class="section-title">Sobre</h2>
 
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img class="imgAlex" src="assets/img/Alexsandro.jpeg" alt="">
-                    </div>
 
-                    <div>
-                        <h2 class="about__subtitle">Alexsandro Vicente</h2>
-                        <span class="about__profession">Front-End</span>
-                        <p class="about__text">Ola meu nome é Alexsandro, sou estudante de programação focado na área de front-end. Atualmente estou fazendo o curso  de desenvolvedor full stack na  Fullture. Possuo conhecimento intermediário em HTML, CSS, JAVASCRIPT e REACT, liderança de equipe e técnicas de Scrum. Possuo projetos próprios em duas lojas de ecommerce. sou jovem dinâmico, apaixonado por tecnologia, rápido aprendizado, bom trabalho em equipe, liderança, prestativo. Estou pronto pra entrar no mercado de trabalho.</p>
-                        <input href="#" style="--clr:#FF0000" type="submit" id="download-pdf" value="CURRICULO" class="contact__button">
-                        
-                        <div class="about__social">
-                            <a href="https://www.linkedin.com/in/alexsandro-vicente-b74b60234/" target="_blank" class="about__social-icon linkedin"><i class='bx bxl-linkedin' ></i></a>
-                            <a href="https://github.com/AlexsandroVcT" target="_blank" class="about__social-icon github"><i class='bx bxl-github' ></i></a>
-                            <a href="https://gitlab.com/AlexsandroVcT" target="_blank" class="about__social-icon gitlab"><i class='bx bxl-gitlab' ></i></a>
-                        </div>
-                    </div>
+        </section>
 
-                
-            </section>
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Habilidades</h2>
 
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Habilidades</h2>
+            <div class="skills__container bd-grid">
+                <div class="skills__box">
+                    <h3 class="skills__subtitle">Development</h3>
+                    <span class="skills__name html">Html</span>
+                    <span class="skills__name css">Css</span>
+                    <span class="skills__name js">Javascript</span>
+                    <!-- <span class="skills__name">Scss</span> -->
+                    <span class="skills__name react">React</span>
+                    <span class="skills__name git">GitHub</span>
+                    <span class="skills__name php">PhP</span>
+                    <span class="skills__name mysql">MySQL</span>
 
-                <div class="skills__container bd-grid">
-                    <div class="skills__box">
-                        <h3 class="skills__subtitle">Development</h3>
-                        <span class="skills__name html">Html</span>
-                        <span class="skills__name css">Css</span>
-                        <span class="skills__name js">Javascript</span>
-                        <!-- <span class="skills__name">Scss</span> -->
-                        <span class="skills__name react">React</span>
-                        <span class="skills__name git">GitHub</span>
-                        <!-- Construção -->
-                        <!-- <h3 class="skills__subtitle">Design</h3>
+
+                    <!-- Construção -->
+                    <!-- <h3 class="skills__subtitle">Design</h3>
                         <span class="skills__name">Figma</span>
                         <span class="skills__name">Adobe XD</span>
                         <span class="skills__name">Photoshop</span> -->
-                    </div>
-
-                    <div class="skills__img">
-                        <img src="assets/img/code1.png" alt="">
-                    </div>
-                </div>
-            </section>
-
-            <!--===== PORTFOLIO =====-->
-            <section class="portfolio section" id="portfolio">
-                <h2 class="section-title">Projetos</h2>
-
-                <div class="portfolio__container bd-grid">
-                    <div class="portfolio__img">
-                        <img src="assets/img/5G.png" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div>
-                    <div class="portfolio__img">
-                        <img src="assets/img/Funcionarios.png" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div>
-                    <div class="portfolio__img">
-                        <img src="assets/img/Chaves-Aleatorias.png" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div>
-                    <div class="portfolio__img">
-                        <img src="assets/img/Spider-man.png" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div>
-                    <div class="portfolio__img">
-                        <img src="assets/img/code.png" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div>
-                    <div class="portfolio__img">
-                        <img src="assets/img/bkdev.png" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contato</h2>
-
-                <div class="contact__container bd-grid">
-                    <div class="contact__info">
-                        <h3 class="contact__subtitle">EMAIL</h3>
-                        <span class="contact__text">alexsandro.vct@outlook.com</span>
-
-                        <h3 class="contact__subtitle">TELEFONE</h3>
-                        <span class="contact__text">+55 82 99646-1399</span>
-
-                        <h3 class="contact__subtitle">Endereço</h3>
-                        <span class="contact__text">Maceió-AL</span>
-                    </div>
-                    <!-- ==== FORM === -->
-                    <form action="https://api.staticforms.xyz/submit" method="POST" class="contact__form">
-                        <div class="contact__inputs">
-                            <input type="hidden" name="accessKey" value="f6e27b64-2118-4502-a682-cb5756993189"> <!-- Required -->
-                            <input type="hidden" name="redirectTo" value="/index.html"> <!-- Optional -->
-
-                            <input type="text" placeholder="Name" name="name" class="contact__input input_text" required maxlength="25">
-                            <input type="mail" placeholder="Email" name="email" class="contact__input input_text" required maxlength="50">
-                        </div>
-
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input" required maxlength="100"></textarea>
-                        <input type="submit" name="message" style="--clr:#FF0000"  value="Enviar" class="contact__button">
-                    </form>
-                    <!-- Barrinha de baixo do Contato -->
-                    <div class="row"> 
-                    </div>
-
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer section">
-            <div class="footer__container bd-grid">
-                <div class="footer__data">
-                    <h2 class="footer__title">Alex</h2>
-                    <p class="footer__text">Eu sou Alexsandro e este é meu site pessoal</p>
                 </div>
 
-                <div class="footer__data">
-                    <h2 class="footer__title">EXPLORE</h2>
-                    <ul>
-                        <li><a href="#home" class="footer__link">Home</a></li>
-                        <li><a href="#about" class="footer__link">Sobre</a></li>
-                        <li><a href="#skills" class="footer__link">Habilidades</a></li>
-                        <li><a href="#portfolio" class="footer__link">Projetos</a></li>
-                        <li><a href="#Contact" class="footer__link">Contato</a></li>
-                    </ul>
+                <div class="skills__img">
+                    <img src="assets/img/code1.png" alt="">
                 </div>
-                
-                <div class="footer__data">
-                    <h2 class="footer__title">SEGUIR</h2>
-                    <a href="https://www.linkedin.com/in/alexsandro-vicente-b74b60234/" target="_blank" class="footer__social linkedin"><i class='bx bxl-linkedin' ></i></a>
-                    <a href="https://www.instagram.com/dev_alex.vct/" target="_blank" class="footer__social instagram"><i class='bx bxl-instagram' ></i></a>
-                    <a href="https://www.youtube.com/channel/UC4QcLSNBNS48nvaOmtmt2Qg" target="_blank" class="footer__social youtube"><i class='bx bxl-youtube' ></i></a>
+            </div>
+        </section>
+
+        <!--===== PORTFOLIO =====-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section-title">Projetos</h2>
+
+            <div class="portfolio__container bd-grid">
+                <div class="portfolio__img">
+                    <img src="assets/img/5G.png" alt="">
+
+                    <div class="portfolio__link">
+                        <a href="https://lexwork-5g.vercel.app/" target="_blank"
+                            class="portfolio__link-name">LexWork-5G</a>
+                    </div>
+                </div>
+                <div class="portfolio__img">
+                    <img src="assets/img/Barbearia.png" alt="">
+
+                    <div class="portfolio__link">
+                        <a href="https://barbearia-stl.vercel.app/" target="_blank" class="portfolio__link-name">WebSite
+                            - Barbearia</a>
+                    </div>
+                </div>
+                <div class="portfolio__img">
+                    <img src="assets/img/Chaves-Aleatorias.png" alt="">
+
+                    <div class="portfolio__link">
+                        <a href="https://github.com/AlexsandroVcT/Random-key-box" target="_blank"
+                            class="portfolio__link-name">Repositorio - Chaves-Aleatorias</a>
+                    </div>
+                </div>
+                <div class="portfolio__img">
+                    <img src="assets/img/Spider-man.png" alt="">
+
+                    <div class="portfolio__link">
+                        <a href="https://github.com/AlexsandroVcT/WebSite-Responsivel" target="_blank"
+                            class="portfolio__link-name">Repositorio Spider-man</a>
+                    </div>
+                </div>
+                <div class="portfolio__img">
+                    <img src="assets/img/E-Ecommerce.png" alt="">
+
+                    <div class="portfolio__link">
+                        <a href="https://equipe-ecommerce.vercel.app/" target="_blank"
+                            class="portfolio__link-name">WebSite E-Ecommerce</a>
+                    </div>
+                </div>
+                <div class="portfolio__img">
+                    <img src="assets/img/Login.png" alt="">
+
+                    <div class="portfolio__link">
+                        <a href="https://github.com/AlexsandroVcT/login-register-mysql" target="_blank"
+                            class="portfolio__link-name">Sistema de Login - PHP</a>
+                    </div>
+                </div>
+                <div class="portfolio__img">
+                    <img src="assets/img/LexFlix.png" alt="">
+
+                    <div class="portfolio__link">
+                        <a href="https://lex-flix2.vercel.app/" target="_blank" class="portfolio__link-name">WebSite
+                            LexFlix</a>
+                    </div>
+                </div>
+                <div class="portfolio__img">
+                    <img src="assets/img/Notas-Aluno.png" alt="">
+
+                    <div class="portfolio__link">
+                        <a href="https://desafio-notas-do-aluno.vercel.app/" target="_blank"
+                            class="portfolio__link-name">WebSite
+                            Notas-Aluno</a>
+                    </div>
+                </div>
+                <div class="portfolio__img">
+                    <img src="assets/img/Caramelo.png" alt="">
+
+                    <div class="portfolio__link">
+                        <a href="https://caramelo-salgados.vercel.app/" target="_blank"
+                            class="portfolio__link-name">WebSite
+                            Caramelo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contato</h2>
+
+            <div class="contact__container bd-grid">
+                <div class="contact__info">
+                    <h3 class="contact__subtitle">EMAIL</h3>
+                    <span class="contact__text">alexsandro.vct@outlook.com</span>
+
+                    <h3 class="contact__subtitle">TELEFONE</h3>
+                    <span class="contact__text">+55 82 99646-1399</span>
+
+                    <h3 class="contact__subtitle">Endereço</h3>
+                    <span class="contact__text">Maceió-AL</span>
                 </div>
 
+
+
+
+
+                <!-- ==== FORM === -->
+                <form class="contact__form">
+                    <div class="contact__inputs">
+                        <input type="hidden" name="" value="">
+                        <!-- Required -->
+                        <input type="hidden" name="redirectTo" value="/index.html"> <!-- Optional -->
+
+                        <input type="text" placeholder="Name" name="name" class="contact__input input_text" required
+                            maxlength="25">
+                        <input type="email" placeholder="Email" name="email" class="contact__input input_text" required
+                            maxlength="50">
+                    </div>
+
+                    <textarea name="" id="" cols="0" rows="10" class="contact__input" required
+                        maxlength="100"></textarea>
+                    <input type="submit" name="message" style="--clr:#FF0000" value="Enviar" class="contact__button"
+                        id="btnEnviar">
+                </form>
+                <!-- Barrinha de baixo do Contato -->
+                <div class="row">
+                </div>
 
             </div>
-        </footer>
+        </section>
+    </main>
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+    <!--===== FOOTER =====-->
+    <footer class="footer section">
+        <div class="footer__container bd-grid">
+            <div class="footer__data">
+                <h2 class="footer__title">Alex</h2>
+                <p class="footer__text">Eu sou Alexsandro e este é meu site pessoal</p>
+            </div>
 
-    
-    </body>
+            <div class="footer__data">
+                <h2 class="footer__title">EXPLORE</h2>
+                <ul>
+                    <li><a href="#home" class="footer__link">Home</a></li>
+                    <li><a href="#about" class="footer__link">Sobre</a></li>
+                    <li><a href="#skills" class="footer__link">Habilidades</a></li>
+                    <li><a href="#portfolio" class="footer__link">Projetos</a></li>
+                    <li><a href="#Contact" class="footer__link">Contato</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer__data">
+                <h2 class="footer__title">SEGUIR</h2>
+                <a href="https://www.linkedin.com/in/alexsandro-vicente-b74b60234/" target="_blank"
+                    class="footer__social linkedin"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.instagram.com/dev_alex.vct/" target="_blank" class="footer__social instagram"><i
+                        class='bx bxl-instagram'></i></a>
+                <a href="https://www.youtube.com/channel/UC4QcLSNBNS48nvaOmtmt2Qg" target="_blank"
+                    class="footer__social youtube"><i class='bx bxl-youtube'></i></a>
+            </div>
+
+
+        </div>
+    </footer>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+</body>
+
 </html>
