@@ -88,21 +88,11 @@ sr.reveal(".contact__text", { interval: 200 });
 sr.reveal(".contact__input", { delay: 400 });
 sr.reveal(".contact__button", { delay: 600 });
 
-const fields = document.querySelectorAll(".contact__form");
-
-// // console.log(fields);
-
-// for (field of inval) {
-//   field.addEventListener("invalid", (event) => {
-//     console.log("Campo invalido");
-//   });
-// }
-
-
-
+// Sistema de envio de email
 const btnEnviar = document.querySelector("#btnEnviar")
-btnEnviar.addEventListener("click", function () {
-  if (btnEnviar == btnEnviar) {
+btnEnviar.addEventListener("click", function (event) {
+  if (btnEnviar != event) {
+    event.preventDefault();
     window.Swal.fire({
       title: 'Me Desculpa?',
       text: 'Sistema de formulario ainda esta em Desenvolvimento!',
@@ -110,7 +100,7 @@ btnEnviar.addEventListener("click", function () {
       icon: 'question'
     })
   } else {
-    console.log('UE')
+    console.log('Volte mais tarde')
 
   }
 })

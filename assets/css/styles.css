@@ -216,13 +216,10 @@ img {
 
 /*===== HOME =====*/
 .home {
-    background: url(../img/Templet2.svg);
+    background: url(../img/bannerOf.jpeg);
     background-position: center top;
     position: relative;
     overflow: hidden;
-
-
-
 }
 
 .home__container {
